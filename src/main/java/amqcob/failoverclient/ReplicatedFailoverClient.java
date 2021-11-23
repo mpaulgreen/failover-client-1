@@ -5,13 +5,11 @@ import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.JMSException;
 import javax.jms.MessageConsumer;
-import javax.jms.MessageProducer;
 import javax.jms.Queue;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 import javax.naming.InitialContext;
 import java.net.Socket;
-import java.util.Locale;
 import java.util.Scanner;
 
 
@@ -77,7 +75,6 @@ public class ReplicatedFailoverClient {
             }
             message0.acknowledge();
         } finally {
-            // Step 13. Be sure to close our resources!
 
             if (connection != null) {
                 connection.close();
