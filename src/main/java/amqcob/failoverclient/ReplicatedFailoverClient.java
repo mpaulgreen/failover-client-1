@@ -14,12 +14,9 @@ import java.util.Scanner;
 
 
 public class ReplicatedFailoverClient {
-    private static Process server0;
-
-    private static Process server1;
 
     public static void main(final String[] args) throws Exception {
-        final int numMessages = 10;
+        final int numMessages = 20;
         Connection connection = null;
         InitialContext initialContext = null;
 
